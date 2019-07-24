@@ -1,46 +1,17 @@
 package IntToRoman;
 
 public class IntToRomain {
-    public static String roman= "";
     public static String intToRoman(int num) {
-
-        while(num!=0 && num > 0){
-            if(num >= 1000){
-                num = num - 1000;
-                roman = roman + "M";
-              
-            }
-            else if(num >= 500 && num < 1000){
-                num = num - 500;
-                roman = roman +"D";
-               
-            }
-            else if(num >= 100 && num < 500){
-                num = num - 100;
-                roman = roman + "C";
-             
-            }
-            else if(num >= 50 && num < 100){
-                num = num - 50;
-                roman = roman + "L";
-              
-            }
-            else if(num >= 10 && num < 50){
-                num = num - 10;
-                roman = roman + "X";
-                
-            }
-            else if(num >= 5 && num < 10){
-                num = num - 5;
-            
-            }
-            else{
-                num = num - 1;
-                roman = roman + "I";
-           
+        String romanNum = "";
+        int[] intArr = {1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000};
+        String[] romanArr = {"I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"};
+        for (int i = intArr.length - 1; i >= 0; i--) {
+            while (num / intArr[i] > 0) {
+                num = num - intArr[i];
+                romanNum += romanArr[i];
             }
         }
-        return roman;
+        return romanNum;
     }
     public static void main(String[] args) {
         System.out.println("Converting 1124 to Roman = "+intToRoman(1124));
