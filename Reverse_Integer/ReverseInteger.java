@@ -1,5 +1,4 @@
 package Reverse_Integer;
-
 public class ReverseInteger {
     public static int reverse(int x) {
         boolean isNegative = false;
