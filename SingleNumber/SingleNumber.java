@@ -1,3 +1,7 @@
+/*
+Author : Aman Ulla
+ */
+
 package SingleNumber;
 
 import java.util.ArrayList;

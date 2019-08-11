@@ -1,3 +1,7 @@
+/*
+Author : Aman Ulla
+ */
+
 package PalindromeNumber;
 
 public class IntegerPalindrome {

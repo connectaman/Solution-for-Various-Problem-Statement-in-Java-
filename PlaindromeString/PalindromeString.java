@@ -1,3 +1,6 @@
+/*
+Author : Aman Ulla
+ */
 package PlaindromeString;
 import java.util.Scanner;
 public class PalindromeString {

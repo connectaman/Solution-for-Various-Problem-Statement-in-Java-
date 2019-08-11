@@ -1,3 +1,7 @@
+/*
+Author : Aman Ulla
+ */
+
 package Reverse_Integer;
 public class ReverseInteger {
     public static int reverse(int x) {
