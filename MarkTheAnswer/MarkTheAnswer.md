@@ -17,10 +17,11 @@ Input Format
 ```
 First Line contains Integer N , the number of questions and the maximum difficulty X Monk can solve.
 Next line contains N integers,denoting the difficulty level of each question.
-``
+
 Output Format
-```
 Maximum score Monk can achieve in the exam.
+```
+
 
 ----
 
