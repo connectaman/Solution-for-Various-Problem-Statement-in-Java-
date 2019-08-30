@@ -43,4 +43,36 @@ SAMPLE OUTPUT
 
 ------
 
+##### Solution in C
 
+```objectivec
+#include <stdio.h>
+int main() {
+    int n,max;
+    int jump = 0,count=0;
+    printf("Enter number of elements: ");
+    scanf("%d",&n);
+    int arr[n];
+    printf("\n Enter the max score: ");
+    scanf("%d",&max);
+    printf("\n Enter %d elements : \n ",n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<n;i++){
+        if(jump<=1){
+            if(arr[i]<=max) {
+                count++;
+            }
+            else{
+                jump++;
+            }
+        }
+        else{
+            break;
+        }
+    }
+    printf("\n Number of subject traverse : %d",count);
+    return 0;
+}
+```
